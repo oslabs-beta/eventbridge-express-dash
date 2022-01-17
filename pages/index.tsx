@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Nav from '../components/Nav'
+import ActionForm from '../components/ActionForm'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,14 @@ const Home: NextPage = () => {
 
       <main>
         <Nav />
+        <div className="md:flex md:items-center md:justify-between py-4 px-20">
+          <div className="flex-1 min-w-0">
+            <h2 className="text-2xl font-bold leading-7 text-gray-800 sm:text-3xl sm:truncate">Submit Action</h2>
+          </div>
+        </div>
+        <div className="w-1/2 mx-auto">
+          <ActionForm />
+        </div>
       </main>
 
       <footer>
